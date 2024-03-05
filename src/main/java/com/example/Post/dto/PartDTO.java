@@ -14,4 +14,7 @@ public class PartDTO {
     List <paragraphDTO> paragraphs;
     @JsonProperty("url_image")
     private String urlImage;
+
+    @JsonProperty("part_name")
+    private String partName;
 }

@@ -9,8 +9,6 @@ import lombok.*;
 import java.sql.Date;
 import java.util.List;
 
-@Entity
-@Table(name = "paragraph")
 @Data//toString
 @Getter
 @Setter

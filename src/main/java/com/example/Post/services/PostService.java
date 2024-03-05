@@ -49,6 +49,7 @@ public class PostService implements IPostService {
         for (PartDTO partDTO : postDTO.getPartList()) {
             Part part = Part.builder()
                     .urlImage(partDTO.getUrlImage())
+                    .partName(partDTO.getPartName())
                     .post(post)
                     .build();
             partRepository.save(part);
@@ -81,6 +82,7 @@ public class PostService implements IPostService {
             PartResponse partResponse = PartResponse.builder()
                     .urlImage(part.getUrlImage())
                     .paragraphs(paras)
+                    .part_name(part.getPartName())
                     .build();
             partsResponses.add(partResponse);
         }

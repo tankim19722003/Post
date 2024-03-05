@@ -19,6 +19,9 @@ public class Part {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "part_name")
+    private String partName;
+
     @Column(name = "url_image")
     private String urlImage;
 

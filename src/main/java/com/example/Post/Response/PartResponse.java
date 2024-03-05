@@ -9,8 +9,6 @@ import lombok.*;
 
 import java.util.List;
 
-@Entity
-@Table(name = "paragraph")
 @Data//toString
 @Getter
 @Setter
@@ -21,6 +19,10 @@ public class PartResponse {
 
    @JsonProperty("url_image")
     private String urlImage;
+
    @JsonProperty("paragraphs")
     private List<ParagraphResponse> paragraphs;
+
+   @JsonProperty("part_name")
+    private String part_name;
 }
